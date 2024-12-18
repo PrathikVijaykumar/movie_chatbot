@@ -7,7 +7,7 @@ from model import stream_gemini_response
 @cl.on_chat_start
 async def on_chat_start():
     text = """
-Hello! I am Sameer, your personal movie assistant 
+Hello! I am Movie Buddy, your personal movie assistant 
 """
     await cl.Message(content=text).send()
     cl.user_session.set(
